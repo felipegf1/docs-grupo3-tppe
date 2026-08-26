@@ -1,0 +1,61 @@
+site_name: Grupo 3 - TPPE
+site_url: https://felipegf1.github.io/docs-grupo3-tppe/
+site_description: Documentação do projeto da disciplina de Técnicas de Programação para Plataformas Emergentes (TPPE)
+site_author: Grupo 3
+repo_url: https://github.com/felipegf1/docs-grupo3-tppe
+repo_name: felipegf1/docs-grupo3-tppe
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    # Modo Claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Alternar para modo escuro
+    # Modo Escuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Alternar para modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - toc:
+      permalink: true
+
+nav:
+  - Início: index.md
+  - Histórias de Usuário: historias-de-usuario.md
