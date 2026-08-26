@@ -8,28 +8,28 @@
 
 ## Contexto
 
-Esta história inverte a lógica tradicional de marketplace: em vez do vendedor publicar um anúncio de venda, é o **comprador** quem publica sua demanda. É a base do modelo "OLX reversa" descrito no MVP do projeto.
+Base do modelo "OLX reversa": em vez do vendedor publicar o que tem à venda, o comprador publica sua demanda.
 
 ## Critérios de Aceite
 
-- [ ] **Dado** que estou autenticado como comprador, **quando** preencho nome do produto, categoria, descrição/detalhes e faixa de preço desejada, **então** o anúncio de "procura-se" é criado e publicado.
-- [ ] **Dado** que estou criando o anúncio, **quando** informo um raio de busca em KM, **então** o sistema restringe a visibilidade do anúncio a vendedores localizados dentro desse raio.
+- [ ] **Dado** que estou autenticado como comprador, **quando** preencho nome do produto, categoria, descrição e faixa de preço desejada, **então** o anúncio é criado e publicado.
+- [ ] **Dado** que estou criando o anúncio, **quando** informo um raio de busca em KM, **então** o anúncio fica visível apenas a vendedores dentro desse raio.
 - [ ] **Dado** que não informo um raio de busca, **então** o sistema aplica um raio padrão pré-definido.
-- [ ] **Dado** um anúncio publicado, **quando** um vendedor visualiza a plataforma, **então** o anúncio aparece na lista de demandas próximas a ele.
-- [ ] **Dado** um anúncio já publicado, **quando** o comprador edita ou encerra o anúncio, **então** ele deixa de ser exibido para novos vendedores.
+- [ ] **Dado** um anúncio publicado, **quando** um vendedor acessa a plataforma, **então** o anúncio aparece na lista de demandas próximas a ele.
+- [ ] **Dado** um anúncio publicado, **quando** o comprador o edita ou encerra, **então** ele deixa de ser exibido para novos vendedores.
 
 ## Regras de Negócio
 
 - O raio de busca é sempre expresso em quilômetros (KM).
-- Um anúncio de "procura-se" deve ter pelo menos: título, categoria e descrição para ser publicado.
-- O anúncio permanece ativo até ser encerrado pelo comprador, receber uma negociação concluída, ou expirar (regra de expiração a definir).
+- Título, categoria e descrição são obrigatórios para publicar.
+- O anúncio permanece ativo até ser encerrado pelo comprador, ter uma negociação concluída ou expirar.
 
 ## Fora de Escopo (nesta história)
 
-- Algoritmo de match automático entre anúncios e produtos de vendedores.
-- Chat/negociação entre comprador e vendedor.
-- Notificações push/e-mail.
+- Algoritmo de match automático entre anúncios e produtos.
+- Chat e negociação entre comprador e vendedor.
+- Notificações push e e-mail.
 
 ## Prioridade
 
-Alta — funcionalidade central do MVP.
+Alta. Funcionalidade central do MVP.
