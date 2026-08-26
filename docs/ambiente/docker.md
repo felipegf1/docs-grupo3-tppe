@@ -21,8 +21,8 @@ flowchart LR
     BE --> DB[("db :5432")]
     AD --> DB
 
-    style DB fill:#5c6bc0,stroke:#3949ab,color:#fff
-    style BE fill:#43a047,stroke:#2e7d32,color:#fff
+    style DB fill:#b4602f,stroke:#7b3e1f,color:#fff
+    style BE fill:#0f6e75,stroke:#0d585e,color:#fff
 ```
 
 ## Como subir

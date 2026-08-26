@@ -14,20 +14,25 @@ theme:
     admonition:
       note: octicons/tag-16
       tip: octicons/light-bulb-16
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
     # Modo Claro
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Alternar para modo escuro
     # Modo Escuro
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Alternar para modo claro
   features:
     - navigation.tabs
@@ -72,6 +77,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Início: index.md
   - Histórias de Usuário:
@@ -83,23 +91,28 @@ nav:
       - Comprador:
           - Criar anúncio de "procura-se": historias-de-usuario/criar-anuncio-procura-se.md
           - Gerenciar meus anúncios: historias-de-usuario/gerenciar-meus-anuncios.md
-          - Receber recomendações: historias-de-usuario/receber-recomendacoes.md
       - Vendedor:
           - Ofertar produto em anúncio: historias-de-usuario/ofertar-produto-em-anuncio.md
           - Buscar e filtrar anúncios: historias-de-usuario/buscar-e-filtrar-anuncios.md
-          - Receber sugestões de anúncios compatíveis: historias-de-usuario/receber-sugestoes-de-anuncios.md
           - Cadastrar produtos na minha loja: historias-de-usuario/cadastrar-produtos-na-loja.md
           - Divulgar minha loja: historias-de-usuario/divulgar-minha-loja.md
+      - Descoberta e recomendação:
+          - Receber recomendações: historias-de-usuario/receber-recomendacoes.md
+          - Receber sugestões de anúncios compatíveis: historias-de-usuario/receber-sugestoes-de-anuncios.md
+          - Recomendações por interesses em comum: historias-de-usuario/recomendacoes-por-interesses-em-comum.md
       - Negociação:
+          - Palpitar preço no anúncio: historias-de-usuario/palpitar-preco-no-anuncio.md
           - Comparar ofertas recebidas: historias-de-usuario/comparar-ofertas-recebidas.md
           - Ofertar um novo valor em um anúncio: historias-de-usuario/ofertar-novo-valor.md
           - Responder a uma contraproposta: historias-de-usuario/responder-contraproposta.md
           - Negociar por chat: historias-de-usuario/negociar-por-chat.md
           - Aceitar ou recusar uma oferta: historias-de-usuario/aceitar-ou-recusar-oferta.md
           - Concluir a venda: historias-de-usuario/concluir-venda.md
-      - Confiança e monetização:
+      - Confiança e histórico:
           - Receber notificações: historias-de-usuario/receber-notificacoes.md
           - Avaliar a contraparte: historias-de-usuario/avaliar-contraparte.md
-          - Assinar um plano de destaque: historias-de-usuario/assinar-plano-destaque.md
+          - Consultar meu histórico de negociações: historias-de-usuario/historico-de-negociacoes.md
+  - Interface:
+      - Identidade visual: interface/identidade-visual.md
   - Ambiente:
       - Ambiente com Docker: ambiente/docker.md

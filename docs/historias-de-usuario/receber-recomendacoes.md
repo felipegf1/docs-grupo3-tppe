@@ -29,7 +29,7 @@ Aplica o algoritmo de match, apontado no projeto como a maior dificuldade técni
 
 - Recomendação por histórico de navegação ou perfil de consumo.
 - Modelos de aprendizado de máquina.
-- Recomendação paga ou patrocinada, tratada em [Assinar um plano de destaque](assinar-plano-destaque.md).
+- Recomendação paga ou patrocinada.
 
 ## Prioridade
 

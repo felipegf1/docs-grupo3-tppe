@@ -24,7 +24,8 @@ Em vez do vendedor anunciar o que tem à venda, é o **comprador** quem publica 
 
 ## Conteúdo da documentação
 
-- [Histórias de Usuário](docs/historias-de-usuario/): as 20 histórias do MVP, do cadastro à avaliação pós-venda.
+- [Histórias de Usuário](docs/historias-de-usuario/): as 22 histórias do MVP, do cadastro à avaliação pós-venda.
+- [Identidade visual](docs/interface/identidade-visual.md): paleta laranja abóbora, complementar teal e tipografia.
 - [Ambiente com Docker](docs/ambiente/docker.md): como subir o projeto com Docker Compose.
 
 ## Rodando com Docker

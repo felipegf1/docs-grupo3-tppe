@@ -60,9 +60,9 @@ flowchart LR
     D -->|Comprador avalia<br/>e barganha| E["🤝 Negociação"]
     E --> F["✅ Venda concluída"]
 
-    style A fill:#5c6bc0,stroke:#3949ab,color:#fff
-    style C fill:#5c6bc0,stroke:#3949ab,color:#fff
-    style F fill:#43a047,stroke:#2e7d32,color:#fff
+    style A fill:#b4602f,stroke:#7b3e1f,color:#fff
+    style C fill:#b4602f,stroke:#7b3e1f,color:#fff
+    style F fill:#0f6e75,stroke:#0d585e,color:#fff
 ```
 
 !!! tip "Por que "OLX reversa"?"
@@ -76,7 +76,13 @@ flowchart LR
 
     ---
 
-    As 20 histórias do MVP, do cadastro à avaliação pós-venda, com critérios de aceite e regras de negócio.
+    As 22 histórias do MVP, do cadastro à avaliação pós-venda, com critérios de aceite e regras de negócio.
+
+-   :material-palette-outline:{ .lg .middle } **[Identidade visual](interface/identidade-visual.md)**
+
+    ---
+
+    Paleta laranja abóbora com complementar teal, tipografia e regras de contraste da interface.
 
 -   :material-docker:{ .lg .middle } **[Ambiente com Docker](ambiente/docker.md)**
 
