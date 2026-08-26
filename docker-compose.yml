@@ -1,0 +1,92 @@
+name: tppe-grupo3
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: tppe-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-tppe}
+      POSTGRES_USER: ${POSTGRES_USER:-tppe}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-tppe}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-tppe} -d ${POSTGRES_DB:-tppe}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - tppe
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tppe-backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-tppe}:${POSTGRES_PASSWORD:-tppe}@db:5432/${POSTGRES_DB:-tppe}
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-key}
+      DEBUG: ${DEBUG:-1}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1,backend}
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - tppe
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: tppe-frontend
+    restart: unless-stopped
+    environment:
+      VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - tppe
+
+  adminer:
+    image: adminer:latest
+    container_name: tppe-adminer
+    restart: unless-stopped
+    environment:
+      ADMINER_DEFAULT_SERVER: db
+    ports:
+      - "${ADMINER_PORT:-8080}:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - tppe
+
+  docs:
+    image: squidfunk/mkdocs-material:9
+    container_name: tppe-docs
+    ports:
+      - "${DOCS_PORT:-8001}:8000"
+    volumes:
+      - .:/docs
+    networks:
+      - tppe
+
+volumes:
+  db-data:
+
+networks:
+  tppe:
+    driver: bridge

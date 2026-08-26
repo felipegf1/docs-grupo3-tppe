@@ -76,5 +76,30 @@ nav:
   - Início: index.md
   - Histórias de Usuário:
       - Visão Geral: historias-de-usuario/index.md
-      - Criar anúncio de "procura-se": historias-de-usuario/criar-anuncio-procura-se.md
-      - Ofertar produto em anúncio: historias-de-usuario/ofertar-produto-em-anuncio.md
+      - Conta e acesso:
+          - Cadastrar-se na plataforma: historias-de-usuario/cadastrar-se-na-plataforma.md
+          - Autenticar-se na plataforma: historias-de-usuario/autenticar-se-na-plataforma.md
+          - Gerenciar perfil e localização: historias-de-usuario/gerenciar-perfil-e-localizacao.md
+      - Comprador:
+          - Criar anúncio de "procura-se": historias-de-usuario/criar-anuncio-procura-se.md
+          - Gerenciar meus anúncios: historias-de-usuario/gerenciar-meus-anuncios.md
+          - Receber recomendações: historias-de-usuario/receber-recomendacoes.md
+      - Vendedor:
+          - Ofertar produto em anúncio: historias-de-usuario/ofertar-produto-em-anuncio.md
+          - Buscar e filtrar anúncios: historias-de-usuario/buscar-e-filtrar-anuncios.md
+          - Receber sugestões de anúncios compatíveis: historias-de-usuario/receber-sugestoes-de-anuncios.md
+          - Cadastrar produtos na minha loja: historias-de-usuario/cadastrar-produtos-na-loja.md
+          - Divulgar minha loja: historias-de-usuario/divulgar-minha-loja.md
+      - Negociação:
+          - Comparar ofertas recebidas: historias-de-usuario/comparar-ofertas-recebidas.md
+          - Ofertar um novo valor em um anúncio: historias-de-usuario/ofertar-novo-valor.md
+          - Responder a uma contraproposta: historias-de-usuario/responder-contraproposta.md
+          - Negociar por chat: historias-de-usuario/negociar-por-chat.md
+          - Aceitar ou recusar uma oferta: historias-de-usuario/aceitar-ou-recusar-oferta.md
+          - Concluir a venda: historias-de-usuario/concluir-venda.md
+      - Confiança e monetização:
+          - Receber notificações: historias-de-usuario/receber-notificacoes.md
+          - Avaliar a contraparte: historias-de-usuario/avaliar-contraparte.md
+          - Assinar um plano de destaque: historias-de-usuario/assinar-plano-destaque.md
+  - Ambiente:
+      - Ambiente com Docker: ambiente/docker.md

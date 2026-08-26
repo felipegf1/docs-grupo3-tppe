@@ -2,7 +2,7 @@
 
 **Uma "OLX reversa" para produtos usados e seminovos.**
 
-Em vez do vendedor anunciar o que tem à venda, é o **comprador** quem publica um anúncio de *"procura-se"* descrevendo o que deseja — e são os vendedores que encontram essa demanda e oferecem seus produtos.
+Em vez do vendedor anunciar o que tem à venda, é o **comprador** quem publica um anúncio de *"procura-se"* descrevendo o que deseja. São os vendedores que encontram essa demanda e oferecem seus produtos.
 
 <div class="grid cards" markdown>
 
@@ -10,7 +10,7 @@ Em vez do vendedor anunciar o que tem à venda, é o **comprador** quem publica 
 
     ---
 
-    Ideia — em fase de definição de escopo e histórias de usuário.
+    Ideia, em fase de definição de escopo e histórias de usuário.
 
 -   :material-puzzle-outline:{ .lg .middle } **Maior dificuldade**
 
@@ -66,7 +66,7 @@ flowchart LR
 ```
 
 !!! tip "Por que "OLX reversa"?"
-    Em marketplaces tradicionais o vendedor cria o anúncio e o comprador procura. Aqui a lógica se inverte: **o comprador anuncia a intenção de compra**, e o mercado responde a ela — reduzindo o tempo de busca e conectando demanda a oferta de forma mais direta.
+    Em marketplaces tradicionais o vendedor cria o anúncio e o comprador procura. Aqui a lógica se inverte: **o comprador anuncia a intenção de compra** e o mercado responde a ela, reduzindo o tempo de busca e ligando demanda a oferta de forma mais direta.
 
 ## :material-book-open-page-variant-outline: Documentação
 
@@ -76,6 +76,12 @@ flowchart LR
 
     ---
 
-    Histórias que descrevem o fluxo principal do MVP: criar um anúncio de "procura-se" e ofertar um produto.
+    As 20 histórias do MVP, do cadastro à avaliação pós-venda, com critérios de aceite e regras de negócio.
+
+-   :material-docker:{ .lg .middle } **[Ambiente com Docker](ambiente/docker.md)**
+
+    ---
+
+    Como subir banco, backend, frontend e documentação com um único `docker compose up`.
 
 </div>
