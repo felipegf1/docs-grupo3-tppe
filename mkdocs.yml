@@ -114,5 +114,3 @@ nav:
           - Consultar meu histórico de negociações: historias-de-usuario/historico-de-negociacoes.md
   - Interface:
       - Identidade visual: interface/identidade-visual.md
-  - Ambiente:
-      - Ambiente com Docker: ambiente/docker.md
