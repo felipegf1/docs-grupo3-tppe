@@ -8,6 +8,12 @@ repo_name: felipegf1/docs-grupo3-tppe
 theme:
   name: material
   language: pt-BR
+  icon:
+    logo: material/swap-horizontal-bold
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/tag-16
+      tip: octicons/light-bulb-16
   palette:
     # Modo Claro
     - scheme: default
@@ -25,11 +31,18 @@ theme:
         name: Alternar para modo claro
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
 
 markdown_extensions:
   - admonition
@@ -49,6 +62,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
   - attr_list
   - md_in_html
@@ -58,4 +74,7 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - Histórias de Usuário: historias-de-usuario.md
+  - Histórias de Usuário:
+      - Visão Geral: historias-de-usuario/index.md
+      - Criar anúncio de "procura-se": historias-de-usuario/criar-anuncio-procura-se.md
+      - Ofertar produto em anúncio: historias-de-usuario/ofertar-produto-em-anuncio.md
