@@ -84,10 +84,4 @@ flowchart LR
 
     Paleta laranja abóbora, tipografia Space Grotesk / Inter e métricas visuais da interface.
 
--   :material-docker:{ .lg .middle } **[Ambiente com Docker](ambiente/docker.md)**
-
-    ---
-
-    Como subir banco, backend, frontend e documentação com um único `docker compose up`.
-
 </div>

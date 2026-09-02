@@ -19,16 +19,14 @@ theme:
     code: JetBrains Mono
   palette:
     # Modo Claro
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-night
         name: Alternar para modo escuro
     # Modo Escuro
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
       toggle:
