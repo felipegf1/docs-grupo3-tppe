@@ -95,11 +95,8 @@ nav:
           - Ofertar produto em anúncio: historias-de-usuario/ofertar-produto-em-anuncio.md
           - Buscar e filtrar anúncios: historias-de-usuario/buscar-e-filtrar-anuncios.md
           - Cadastrar produtos na minha loja: historias-de-usuario/cadastrar-produtos-na-loja.md
-          - Divulgar minha loja: historias-de-usuario/divulgar-minha-loja.md
       - Descoberta e recomendação:
           - Receber recomendações: historias-de-usuario/receber-recomendacoes.md
-          - Receber sugestões de anúncios compatíveis: historias-de-usuario/receber-sugestoes-de-anuncios.md
-          - Recomendações por interesses em comum: historias-de-usuario/recomendacoes-por-interesses-em-comum.md
       - Negociação:
           - Palpitar preço no anúncio: historias-de-usuario/palpitar-preco-no-anuncio.md
           - Comparar ofertas recebidas: historias-de-usuario/comparar-ofertas-recebidas.md
@@ -114,3 +111,5 @@ nav:
           - Consultar meu histórico de negociações: historias-de-usuario/historico-de-negociacoes.md
   - Interface:
       - Identidade visual: interface/identidade-visual.md
+  - Ambiente:
+      - Docker: ambiente/docker.md

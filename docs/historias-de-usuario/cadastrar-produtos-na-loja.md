@@ -8,7 +8,7 @@
 
 ## Contexto
 
-O MVP prevê que o vendedor "pode anunciar seu produto em sua loja". O catálogo evita redigitar os dados a cada oferta e alimenta [as sugestões de anúncios compatíveis](receber-sugestoes-de-anuncios.md).
+O MVP prevê que o vendedor "pode anunciar seu produto em sua loja". O catálogo evita redigitar os dados a cada oferta e facilita o envio de propostas.
 
 ## Critérios de Aceite
 

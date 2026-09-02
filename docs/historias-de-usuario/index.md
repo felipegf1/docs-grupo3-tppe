@@ -2,7 +2,7 @@
 
 Histórias do MVP da **Plataforma de E-Commerce de Usados/Seminovos**, a "OLX reversa" em que o comprador anuncia o que procura e os vendedores respondem com ofertas.
 
-São 22 histórias, agrupadas por etapa do fluxo. Todas seguem o mesmo formato: descrição no padrão *Como / Eu quero / Para que*, contexto, critérios de aceite em *Dado / Quando / Então*, regras de negócio, itens fora de escopo e prioridade.
+São 19 histórias, agrupadas por etapa do fluxo. Todas seguem o mesmo formato: descrição no padrão *Como / Eu quero / Para que*, contexto, critérios de aceite em *Dado / Quando / Então*, regras de negócio, itens fora de escopo e prioridade.
 
 ## Conta e acesso
 
@@ -26,15 +26,12 @@ São 22 histórias, agrupadas por etapa do fluxo. Todas seguem o mesmo formato: 
 | [Ofertar produto em anúncio](ofertar-produto-em-anuncio.md) | Vendedor | Responder uma demanda compatível com uma oferta | Alta |
 | [Buscar e filtrar anúncios](buscar-e-filtrar-anuncios.md) | Vendedor | Achar rápido as demandas que consegue atender | Alta |
 | [Cadastrar produtos na minha loja](cadastrar-produtos-na-loja.md) | Vendedor | Manter catálogo para ofertar em poucos cliques | Média |
-| [Divulgar minha loja](divulgar-minha-loja.md) | Vendedor | Página pública com produtos e reputação | Baixa |
 
 ## Descoberta e recomendação
 
 | História | Ator | Resumo | Prioridade |
 |---|---|---|---|
 | [Receber recomendações](receber-recomendacoes.md) | Comprador | Ver vendedores e produtos compatíveis com a demanda | Média |
-| [Receber sugestões de anúncios compatíveis](receber-sugestoes-de-anuncios.md) | Vendedor | Match automático entre catálogo e demandas | Média |
-| [Recomendações por interesses em comum](recomendacoes-por-interesses-em-comum.md) | Comprador e Vendedor | Aproximar quem atua nas mesmas categorias | Média |
 
 ## Negociação
 
@@ -63,12 +60,9 @@ flowchart TD
     A["Cadastro e login"] --> B["Criar anúncio de procura-se"]
     A --> C["Cadastrar produtos na loja"]
     B --> D["Buscar e filtrar anúncios"]
-    C --> E["Receber sugestões de anúncios"]
-    A --> R["Recomendações por interesses em comum"]
     B --> P["Palpitar preço no anúncio"]
-    D --> F["Ofertar produto em anúncio"]
-    E --> F
-    R --> F
+    C --> F["Ofertar produto em anúncio"]
+    D --> F
     P --> F
     B --> G["Receber recomendações"]
     F --> H["Comparar ofertas recebidas"]
@@ -82,8 +76,7 @@ flowchart TD
     M --> N["Avaliar a contraparte"]
     M --> O["Histórico de negociações"]
 
-    style A fill:#b4602f,stroke:#8a4522,color:#fff
-    style P fill:#0f6e75,stroke:#0b5157,color:#fff
-    style R fill:#0f6e75,stroke:#0b5157,color:#fff
-    style M fill:#0f6e75,stroke:#0b5157,color:#fff
+    style A fill:#D97338,stroke:#C25F27,color:#fff
+    style P fill:#007AFF,stroke:#0062CC,color:#fff
+    style M fill:#34C759,stroke:#2BA84A,color:#fff
 ```

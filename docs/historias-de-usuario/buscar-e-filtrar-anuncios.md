@@ -26,7 +26,7 @@ Detalha o primeiro critério de [Ofertar produto em um anúncio](ofertar-produto
 
 ## Fora de Escopo (nesta história)
 
-- Sugestão automática de anúncios, tratada em [Receber sugestões de anúncios compatíveis](receber-sugestoes-de-anuncios.md).
+- Sugestão automática de anúncios.
 - Busca por imagem.
 - Alerta por e-mail de novas buscas salvas.
 
