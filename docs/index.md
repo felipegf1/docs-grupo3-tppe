@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # :material-swap-horizontal-bold: Plataforma para E-Commerce
 
 **Uma "OLX reversa" para produtos usados e seminovos.**

@@ -142,8 +142,13 @@ html [data-md-color-primary="custom"] .md-tabs {
 }
 
 /* -------------------------------------------------------------------------
-   Tipografia dos Títulos (Space Grotesk)
+   Tipografia e Legibilidade
    ------------------------------------------------------------------------- */
+.md-typeset {
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
@@ -158,12 +163,16 @@ html [data-md-color-primary="custom"] .md-tabs {
 }
 
 .md-typeset h1 {
+  font-size: 2rem;
   font-weight: 700;
+  line-height: 1.25;
   color: var(--md-typeset-color);
 }
 
 .md-typeset h2 {
+  font-size: 1.35rem;
   font-weight: 600;
+  line-height: 1.35;
   margin-top: 1.8em;
   padding-bottom: 0.3em;
   border-bottom: 1px solid var(--border-color);
@@ -171,6 +180,7 @@ html [data-md-color-primary="custom"] .md-tabs {
 }
 
 .md-typeset h3 {
+  font-size: 1.1rem;
   font-weight: 600;
   margin-top: 1.4em;
 }
