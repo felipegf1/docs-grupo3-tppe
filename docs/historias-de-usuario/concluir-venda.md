@@ -1,5 +1,10 @@
 # Concluir a venda
 
+!!! abstract "QRO-16 · Épico 5 — Negociação"
+    **Ator:** Vendedor &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 7 &nbsp;·&nbsp; **Depende de:** QRO-15
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/negociacao.md#qro-16)
+
 ## Descrição
 
 **Como** vendedor,

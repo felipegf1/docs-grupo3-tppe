@@ -1,5 +1,10 @@
 # Gerenciar perfil e localização
 
+!!! abstract "QRO-03 · Épico 1 — Conta e acesso"
+    **Ator:** Usuário &nbsp;·&nbsp; **Prioridade:** Média &nbsp;·&nbsp; **Estimativa:** 3 pontos &nbsp;·&nbsp; **Sprint:** 2 &nbsp;·&nbsp; **Depende de:** QRO-01, QRO-02
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/conta-e-acesso.md#qro-03)
+
 ## Descrição
 
 **Como** usuário,

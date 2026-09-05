@@ -1,5 +1,10 @@
 # Consultar meu histórico de negociações
 
+!!! abstract "QRO-19 · Épico 6 — Confiança e histórico"
+    **Ator:** Usuário &nbsp;·&nbsp; **Prioridade:** Baixa &nbsp;·&nbsp; **Estimativa:** 3 pontos &nbsp;·&nbsp; **Sprint:** 8 &nbsp;·&nbsp; **Depende de:** QRO-16
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/confianca-e-historico.md#qro-19)
+
 ## Descrição
 
 **Como** usuário,

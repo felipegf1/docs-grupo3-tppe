@@ -1,5 +1,10 @@
 # Receber notificações
 
+!!! abstract "QRO-17 · Épico 6 — Confiança e histórico"
+    **Ator:** Usuário &nbsp;·&nbsp; **Prioridade:** Média &nbsp;·&nbsp; **Estimativa:** 8 pontos &nbsp;·&nbsp; **Sprint:** 8 &nbsp;·&nbsp; **Depende de:** QRO-04, QRO-06
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/confianca-e-historico.md#qro-17)
+
 ## Descrição
 
 **Como** usuário,

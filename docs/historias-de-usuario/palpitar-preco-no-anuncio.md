@@ -1,5 +1,10 @@
 # Palpitar preço no anúncio
 
+!!! abstract "QRO-10 · Épico 5 — Negociação"
+    **Ator:** Vendedor &nbsp;·&nbsp; **Prioridade:** Média &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 4 &nbsp;·&nbsp; **Depende de:** QRO-04
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/negociacao.md#qro-10)
+
 ## Descrição
 
 **Como** vendedor,

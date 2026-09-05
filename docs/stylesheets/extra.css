@@ -248,3 +248,18 @@ html [data-md-color-primary="custom"] .md-tabs {
   font-weight: 700;
   margin-bottom: 0.2rem;
 }
+
+/* Avatares da página de Equipe */
+.md-typeset .grid.cards img.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 999px;
+  border: 2px solid var(--primary-orange);
+  display: block;
+  margin: 0 auto 0.6rem;
+}
+
+/* Blocos de citação usados como assinatura da marca */
+.md-typeset .admonition.quote > .admonition-title {
+  display: none;
+}

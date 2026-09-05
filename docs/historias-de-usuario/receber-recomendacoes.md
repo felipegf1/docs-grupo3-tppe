@@ -1,5 +1,10 @@
 # Receber recomendações
 
+!!! abstract "QRO-09 · Épico 4 — Descoberta e recomendação"
+    **Ator:** Comprador &nbsp;·&nbsp; **Prioridade:** Média &nbsp;·&nbsp; **Estimativa:** 13 pontos &nbsp;·&nbsp; **Sprint:** 9 &nbsp;·&nbsp; **Depende de:** QRO-04, QRO-08
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/descoberta.md#qro-09)
+
 ## Descrição
 
 **Como** comprador,

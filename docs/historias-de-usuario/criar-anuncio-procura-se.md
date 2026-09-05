@@ -1,5 +1,10 @@
 # Criar anúncio de "procura-se"
 
+!!! abstract "QRO-04 · Épico 2 — Comprador: publicar a demanda"
+    **Ator:** Comprador &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 8 pontos &nbsp;·&nbsp; **Sprint:** 2 &nbsp;·&nbsp; **Depende de:** QRO-02, QRO-03
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/comprador.md#qro-04)
+
 ## Descrição
 
 **Como** comprador,
@@ -8,7 +13,7 @@
 
 ## Contexto
 
-Base do modelo "OLX reversa": em vez do vendedor publicar o que tem à venda, o comprador publica sua demanda.
+Base do modelo de compra reversa do **Quero.**: em vez de o vendedor publicar o que tem à venda, o comprador publica sua demanda e o mercado responde a ela.
 
 ## Critérios de Aceite
 

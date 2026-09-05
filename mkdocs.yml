@@ -1,7 +1,7 @@
-site_name: Grupo 3 - TPPE
+site_name: Quero.
 site_url: https://felipegf1.github.io/docs-grupo3-tppe/
-site_description: Documentação do projeto da disciplina de Técnicas de Programação para Plataformas Emergentes (TPPE)
-site_author: Grupo 3
+site_description: Quero. — plataforma de compras reversa para usados e seminovos. Documentação do projeto do Grupo 3 da disciplina de Técnicas de Programação para Plataformas Emergentes (TPPE).
+site_author: Grupo 3 — TPPE
 repo_url: https://github.com/felipegf1/docs-grupo3-tppe
 repo_name: felipegf1/docs-grupo3-tppe
 
@@ -9,7 +9,7 @@ theme:
   name: material
   language: pt-BR
   icon:
-    logo: material/swap-horizontal-bold
+    logo: material/magnify
     repo: fontawesome/brands/github
     admonition:
       note: octicons/tag-16
@@ -80,33 +80,67 @@ extra_css:
 
 nav:
   - Início: index.md
+  - Produto:
+      - Requisitos: produto/requisitos.md
+      - Glossário: produto/glossario.md
   - Histórias de Usuário:
       - Visão Geral: historias-de-usuario/index.md
       - Conta e acesso:
-          - Cadastrar-se na plataforma: historias-de-usuario/cadastrar-se-na-plataforma.md
-          - Autenticar-se na plataforma: historias-de-usuario/autenticar-se-na-plataforma.md
-          - Gerenciar perfil e localização: historias-de-usuario/gerenciar-perfil-e-localizacao.md
+          - QRO-01 Cadastrar-se na plataforma: historias-de-usuario/cadastrar-se-na-plataforma.md
+          - QRO-02 Autenticar-se na plataforma: historias-de-usuario/autenticar-se-na-plataforma.md
+          - QRO-03 Gerenciar perfil e localização: historias-de-usuario/gerenciar-perfil-e-localizacao.md
       - Comprador:
-          - Criar anúncio de "procura-se": historias-de-usuario/criar-anuncio-procura-se.md
-          - Gerenciar meus anúncios: historias-de-usuario/gerenciar-meus-anuncios.md
+          - QRO-04 Criar anúncio de "procura-se": historias-de-usuario/criar-anuncio-procura-se.md
+          - QRO-05 Gerenciar meus anúncios: historias-de-usuario/gerenciar-meus-anuncios.md
       - Vendedor:
-          - Ofertar produto em anúncio: historias-de-usuario/ofertar-produto-em-anuncio.md
-          - Buscar e filtrar anúncios: historias-de-usuario/buscar-e-filtrar-anuncios.md
-          - Cadastrar produtos na minha loja: historias-de-usuario/cadastrar-produtos-na-loja.md
+          - QRO-06 Ofertar produto em anúncio: historias-de-usuario/ofertar-produto-em-anuncio.md
+          - QRO-07 Buscar e filtrar anúncios: historias-de-usuario/buscar-e-filtrar-anuncios.md
+          - QRO-08 Cadastrar produtos na minha loja: historias-de-usuario/cadastrar-produtos-na-loja.md
       - Descoberta e recomendação:
-          - Receber recomendações: historias-de-usuario/receber-recomendacoes.md
+          - QRO-09 Receber recomendações: historias-de-usuario/receber-recomendacoes.md
       - Negociação:
-          - Palpitar preço no anúncio: historias-de-usuario/palpitar-preco-no-anuncio.md
-          - Comparar ofertas recebidas: historias-de-usuario/comparar-ofertas-recebidas.md
-          - Ofertar um novo valor em um anúncio: historias-de-usuario/ofertar-novo-valor.md
-          - Responder a uma contraproposta: historias-de-usuario/responder-contraproposta.md
-          - Negociar por chat: historias-de-usuario/negociar-por-chat.md
-          - Aceitar ou recusar uma oferta: historias-de-usuario/aceitar-ou-recusar-oferta.md
-          - Concluir a venda: historias-de-usuario/concluir-venda.md
+          - QRO-10 Palpitar preço no anúncio: historias-de-usuario/palpitar-preco-no-anuncio.md
+          - QRO-11 Comparar ofertas recebidas: historias-de-usuario/comparar-ofertas-recebidas.md
+          - QRO-12 Ofertar um novo valor em um anúncio: historias-de-usuario/ofertar-novo-valor.md
+          - QRO-13 Responder a uma contraproposta: historias-de-usuario/responder-contraproposta.md
+          - QRO-14 Negociar por chat: historias-de-usuario/negociar-por-chat.md
+          - QRO-15 Aceitar ou recusar uma oferta: historias-de-usuario/aceitar-ou-recusar-oferta.md
+          - QRO-16 Concluir a venda: historias-de-usuario/concluir-venda.md
       - Confiança e histórico:
-          - Receber notificações: historias-de-usuario/receber-notificacoes.md
-          - Avaliar a contraparte: historias-de-usuario/avaliar-contraparte.md
-          - Consultar meu histórico de negociações: historias-de-usuario/historico-de-negociacoes.md
+          - QRO-17 Receber notificações: historias-de-usuario/receber-notificacoes.md
+          - QRO-18 Avaliar a contraparte: historias-de-usuario/avaliar-contraparte.md
+          - QRO-19 Consultar meu histórico de negociações: historias-de-usuario/historico-de-negociacoes.md
+  - Backlog do Produto:
+      - Visão Geral: backlog/index.md
+      - Épico 1 — Conta e acesso: backlog/conta-e-acesso.md
+      - Épico 2 — Comprador: backlog/comprador.md
+      - Épico 3 — Vendedor: backlog/vendedor.md
+      - Épico 4 — Descoberta e recomendação: backlog/descoberta.md
+      - Épico 5 — Negociação: backlog/negociacao.md
+      - Épico 6 — Confiança e histórico: backlog/confianca-e-historico.md
   - Interface:
       - Identidade visual: interface/identidade-visual.md
+      - Protótipo: interface/prototipo.md
+  - Equipe: equipe.md
 
+copyright: >
+  Quero. — Grupo 3 · Técnicas de Programação para Plataformas Emergentes (TPPE)
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/felipegf1/docs-grupo3-tppe
+      name: Repositório do Quero. no GitHub
+    - icon: fontawesome/brands/github
+      link: https://github.com/felipegf1
+      name: felipegf1
+    - icon: fontawesome/brands/github
+      link: https://github.com/antonioscarvalho
+      name: Antonio Carvalho
+    - icon: fontawesome/brands/github
+      link: https://github.com/maykonjuso
+      name: maykonjuso
+
+validation:
+  anchors: warn
+  unrecognized_links: warn

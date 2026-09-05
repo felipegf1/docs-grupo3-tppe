@@ -1,5 +1,10 @@
 # Ofertar produto em um anúncio de "procura-se"
 
+!!! abstract "QRO-06 · Épico 3 — Vendedor: encontrar e ofertar"
+    **Ator:** Vendedor &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 8 pontos &nbsp;·&nbsp; **Sprint:** 3 &nbsp;·&nbsp; **Depende de:** QRO-04
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/vendedor.md#qro-06)
+
 ## Descrição
 
 **Como** vendedor,

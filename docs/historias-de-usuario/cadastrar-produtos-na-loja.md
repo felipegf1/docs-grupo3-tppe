@@ -1,5 +1,10 @@
 # Cadastrar produtos na minha loja
 
+!!! abstract "QRO-08 · Épico 3 — Vendedor: encontrar e ofertar"
+    **Ator:** Vendedor &nbsp;·&nbsp; **Prioridade:** Média &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 4 &nbsp;·&nbsp; **Depende de:** QRO-02
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/vendedor.md#qro-08)
+
 ## Descrição
 
 **Como** vendedor,

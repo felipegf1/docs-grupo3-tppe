@@ -1,5 +1,10 @@
 # Buscar e filtrar anúncios de "procura-se"
 
+!!! abstract "QRO-07 · Épico 3 — Vendedor: encontrar e ofertar"
+    **Ator:** Vendedor &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 4 &nbsp;·&nbsp; **Depende de:** QRO-04, QRO-06
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/vendedor.md#qro-07)
+
 ## Descrição
 
 **Como** vendedor,

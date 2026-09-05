@@ -1,5 +1,10 @@
 # Autenticar-se na plataforma
 
+!!! abstract "QRO-02 · Épico 1 — Conta e acesso"
+    **Ator:** Usuário &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 1 &nbsp;·&nbsp; **Depende de:** QRO-01
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/conta-e-acesso.md#qro-02)
+
 ## Descrição
 
 **Como** usuário cadastrado,

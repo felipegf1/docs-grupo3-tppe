@@ -1,5 +1,10 @@
 # Ofertar um novo valor em um anúncio
 
+!!! abstract "QRO-12 · Épico 5 — Negociação"
+    **Ator:** Comprador &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 5 &nbsp;·&nbsp; **Depende de:** QRO-11
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/negociacao.md#qro-12)
+
 ## Descrição
 
 **Como** comprador,

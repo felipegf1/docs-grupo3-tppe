@@ -1,5 +1,10 @@
 # Comparar ofertas recebidas
 
+!!! abstract "QRO-11 · Épico 5 — Negociação"
+    **Ator:** Comprador &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 5 &nbsp;·&nbsp; **Depende de:** QRO-06
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/negociacao.md#qro-11)
+
 ## Descrição
 
 **Como** comprador,

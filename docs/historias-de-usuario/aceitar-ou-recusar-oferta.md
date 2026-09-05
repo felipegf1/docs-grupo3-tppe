@@ -1,5 +1,10 @@
 # Aceitar ou recusar uma oferta
 
+!!! abstract "QRO-15 · Épico 5 — Negociação"
+    **Ator:** Comprador &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 6 &nbsp;·&nbsp; **Depende de:** QRO-11, QRO-13
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/negociacao.md#qro-15)
+
 ## Descrição
 
 **Como** comprador,

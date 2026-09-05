@@ -1,5 +1,10 @@
 # Negociar por chat
 
+!!! abstract "QRO-14 · Épico 5 — Negociação"
+    **Ator:** Comprador e Vendedor &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 8 pontos &nbsp;·&nbsp; **Sprint:** 6 &nbsp;·&nbsp; **Depende de:** QRO-06
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/negociacao.md#qro-14)
+
 ## Descrição
 
 **Como** comprador ou vendedor,

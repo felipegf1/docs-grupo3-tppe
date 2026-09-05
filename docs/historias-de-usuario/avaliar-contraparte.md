@@ -1,5 +1,10 @@
 # Avaliar a contraparte
 
+!!! abstract "QRO-18 · Épico 6 — Confiança e histórico"
+    **Ator:** Comprador e Vendedor &nbsp;·&nbsp; **Prioridade:** Média &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 8 &nbsp;·&nbsp; **Depende de:** QRO-16
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/confianca-e-historico.md#qro-18)
+
 ## Descrição
 
 **Como** comprador ou vendedor,

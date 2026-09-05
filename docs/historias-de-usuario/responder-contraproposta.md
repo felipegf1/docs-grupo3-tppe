@@ -1,5 +1,10 @@
 # Responder a uma contraproposta
 
+!!! abstract "QRO-13 · Épico 5 — Negociação"
+    **Ator:** Vendedor &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 5 &nbsp;·&nbsp; **Depende de:** QRO-12
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/negociacao.md#qro-13)
+
 ## Descrição
 
 **Como** vendedor,

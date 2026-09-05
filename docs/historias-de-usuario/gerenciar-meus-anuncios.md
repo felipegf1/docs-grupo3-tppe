@@ -1,5 +1,10 @@
 # Gerenciar meus anúncios de "procura-se"
 
+!!! abstract "QRO-05 · Épico 2 — Comprador: publicar a demanda"
+    **Ator:** Comprador &nbsp;·&nbsp; **Prioridade:** Alta &nbsp;·&nbsp; **Estimativa:** 5 pontos &nbsp;·&nbsp; **Sprint:** 3 &nbsp;·&nbsp; **Depende de:** QRO-04
+
+    [:material-format-list-checks: Tarefas desta história no backlog](../backlog/comprador.md#qro-05)
+
 ## Descrição
 
 **Como** comprador,
