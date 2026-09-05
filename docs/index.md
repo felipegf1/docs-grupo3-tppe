@@ -19,7 +19,7 @@ Em vez de o vendedor anunciar o que tem à venda, é o **comprador** quem public
 
     ---
 
-    Requisitos e protótipo definidos. Backlog do produto priorizado em 19 itens e 9 sprints.
+    Requisitos, protótipo e arquitetura definidos. Backlog priorizado em 19 itens e 9 sprints; implementação a iniciar.
 
 -   :material-puzzle-outline:{ .lg .middle } **Maior dificuldade**
 
@@ -106,6 +106,12 @@ flowchart LR
 
     A linguagem única do projeto: papéis, objetos do domínio, estados e termos a evitar.
 
+-   :material-sitemap-outline:{ .lg .middle } **[Arquitetura](arquitetura/index.md)**
+
+    ---
+
+    Backend em Python com Django, PostgreSQL com **PostGIS** para o raio de busca, frontend em Vite e o esboço do que falta construir.
+
 -   :material-palette-outline:{ .lg .middle } **[Identidade visual](interface/identidade-visual.md)**
 
     ---
@@ -135,3 +141,4 @@ flowchart LR
 | **Estimativa total** | 111 pontos |
 | **Planejamento** | 9 sprints em 3 releases |
 | **Requisitos** | 40 funcionais e 23 não funcionais |
+| **Stack** | Python · Django · PostgreSQL + PostGIS · Vite |

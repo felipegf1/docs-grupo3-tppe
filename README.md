@@ -20,7 +20,8 @@ No **Quero.** a lógica do marketplace se inverte. Em vez de o vendedor anunciar
 
 | | |
 |---|---|
-| **Estado atual** | Requisitos e protótipo definidos; backlog priorizado |
+| **Estado atual** | Requisitos, protótipo e arquitetura definidos; implementação a iniciar |
+| **Stack** | Python · Django + DRF · PostgreSQL com PostGIS · Vite |
 | **Dificuldade principal** | Algoritmo de *match* entre anúncios de "procura-se" e produtos dos vendedores |
 | **Modelo de ganhos** | Links de afiliado, percentual sobre a venda ou assinatura |
 | **Documentação** | [felipegf1.github.io/docs-grupo3-tppe](https://felipegf1.github.io/docs-grupo3-tppe/) |
@@ -40,6 +41,7 @@ No **Quero.** a lógica do marketplace se inverte. Em vez de o vendedor anunciar
 | **Estimativa total** | 111 pontos |
 | **Planejamento** | 9 sprints em 3 releases |
 | **Requisitos** | 40 funcionais e 23 não funcionais |
+| **Stack** | Python · Django · PostgreSQL + PostGIS · Vite |
 
 ---
 
@@ -51,6 +53,7 @@ No **Quero.** a lógica do marketplace se inverte. Em vez de o vendedor anunciar
 | [Backlog do Produto](https://felipegf1.github.io/docs-grupo3-tppe/backlog/) | Os 19 itens `QRO-XX` com tarefas técnicas, estimativas, dependências, releases e roadmap por sprint |
 | [Requisitos](https://felipegf1.github.io/docs-grupo3-tppe/produto/requisitos/) | 40 requisitos funcionais e 23 não funcionais rastreados até a história de origem |
 | [Glossário](https://felipegf1.github.io/docs-grupo3-tppe/produto/glossario/) | A linguagem única do projeto: papéis, objetos do domínio, estados e termos a evitar |
+| [Arquitetura](https://felipegf1.github.io/docs-grupo3-tppe/arquitetura/) | Backend em Python, PostGIS para o raio de busca, frontend em Vite, infraestrutura e roadmap técnico |
 | [Identidade visual](https://felipegf1.github.io/docs-grupo3-tppe/interface/identidade-visual/) | Marca, paleta laranja abóbora, tipografia Space Grotesk / Inter e componentes |
 | [Protótipo](https://felipegf1.github.io/docs-grupo3-tppe/interface/prototipo/) | A tela inicial elemento por elemento, ligada às histórias que cada parte implementa |
 | [Equipe](https://felipegf1.github.io/docs-grupo3-tppe/equipe/) | Quem constrói o Quero. e como o trabalho é organizado |
@@ -104,6 +107,8 @@ docker compose up docs
 A documentação fica disponível em `http://localhost:8001`.
 
 > O `docker-compose.yml` também descreve os serviços planejados da aplicação (`backend`, `frontend`, `db` e `adminer`). Eles ainda não fazem parte deste repositório: enquanto o código não existir, use `docker compose up docs`, que sobe apenas a documentação. Para o ambiente completo, copie as variáveis com `cp .env.example .env` antes de subir.
+>
+> **Atenção:** a imagem do banco declarada hoje é `postgres:16-alpine`, que **não** contém a extensão PostGIS exigida pelo raio de busca. A troca por `postgis/postgis:16-3.4` é o primeiro item da [Fase 0 do roadmap técnico](https://felipegf1.github.io/docs-grupo3-tppe/arquitetura/infraestrutura/#o-que-ainda-sera-realizado).
 
 | Endereço | Serviço | Situação |
 |---|---|---|

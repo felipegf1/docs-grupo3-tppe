@@ -118,6 +118,12 @@ nav:
       - Épico 4 — Descoberta e recomendação: backlog/descoberta.md
       - Épico 5 — Negociação: backlog/negociacao.md
       - Épico 6 — Confiança e histórico: backlog/confianca-e-historico.md
+  - Arquitetura:
+      - Visão Geral: arquitetura/index.md
+      - Backend: arquitetura/backend.md
+      - Geolocalização: arquitetura/geolocalizacao.md
+      - Frontend: arquitetura/frontend.md
+      - Infraestrutura: arquitetura/infraestrutura.md
   - Interface:
       - Identidade visual: interface/identidade-visual.md
       - Protótipo: interface/prototipo.md
