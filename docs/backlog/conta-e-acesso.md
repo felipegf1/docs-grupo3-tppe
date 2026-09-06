@@ -2,12 +2,12 @@
 
 Todo o resto do **Quero.** depende deste épico: sem conta identificada e sem localização de referência não existe raio, não existe match e não existe negociação.
 
-| Item | História | MoSCoW | Pontos | Sprint |
-| :--- | :--- | :---: | :---: | :---: |
-| [QRO-01](#qro-01) | Cadastrar-se na plataforma | M | 5 | 1 |
-| [QRO-02](#qro-02) | Autenticar-se na plataforma | M | 5 | 1 |
-| [QRO-03](#qro-03) | Gerenciar perfil e localização | S | 3 | 2 |
-| | **Total do épico** | | **13** | |
+| Item | História | Pontos | Sprint |
+| :--- | :--- | :---: | :---: |
+| [QRO-01](#qro-01) | Cadastrar-se na plataforma | 5 | 1 |
+| [QRO-02](#qro-02) | Autenticar-se na plataforma | 5 | 1 |
+| [QRO-03](#qro-03) | Gerenciar perfil e localização | 3 | 2 |
+| | **Total do épico** | **13** | |
 
 ---
 
@@ -15,7 +15,7 @@ Todo o resto do **Quero.** depende deste épico: sem conta identificada e sem lo
 
 > **Como** visitante, **eu quero** criar uma conta informando meus dados e minha localização, **para que** eu possa publicar anúncios de "procura-se" como comprador ou ofertar produtos como vendedor.
 
-**História:** [Cadastrar-se na plataforma](../historias-de-usuario/cadastrar-se-na-plataforma.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 1 · **Depende de:** —
+**História:** [Cadastrar-se na plataforma](../historias-de-usuario/cadastrar-se-na-plataforma.md) · **Pontos:** 5 · **Sprint:** 1 · **Depende de:** —
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -40,7 +40,7 @@ Todo o resto do **Quero.** depende deste épico: sem conta identificada e sem lo
 
 > **Como** usuário cadastrado, **eu quero** entrar na plataforma com minhas credenciais e encerrar a sessão quando quiser, **para que** somente eu tenha acesso aos meus anúncios, ofertas e negociações.
 
-**História:** [Autenticar-se na plataforma](../historias-de-usuario/autenticar-se-na-plataforma.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 1 · **Depende de:** `QRO-01`
+**História:** [Autenticar-se na plataforma](../historias-de-usuario/autenticar-se-na-plataforma.md) · **Pontos:** 5 · **Sprint:** 1 · **Depende de:** `QRO-01`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -64,7 +64,7 @@ Todo o resto do **Quero.** depende deste épico: sem conta identificada e sem lo
 
 > **Como** usuário, **eu quero** manter meus dados de perfil e minha localização atualizados, **para que** os anúncios e ofertas que eu vejo correspondam à região onde estou.
 
-**História:** [Gerenciar perfil e localização](../historias-de-usuario/gerenciar-perfil-e-localizacao.md) · **Prioridade:** Média · **Pontos:** 3 · **Sprint:** 2 · **Depende de:** `QRO-01`, `QRO-02`
+**História:** [Gerenciar perfil e localização](../historias-de-usuario/gerenciar-perfil-e-localizacao.md) · **Pontos:** 3 · **Sprint:** 2 · **Depende de:** `QRO-01`, `QRO-02`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |

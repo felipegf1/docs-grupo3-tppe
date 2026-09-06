@@ -2,12 +2,12 @@
 
 Negociação entre desconhecidos, com pagamento e entrega fora da plataforma, depende de reputação e de rastro. Este épico é o que torna o **Quero.** utilizável mais de uma vez pelo mesmo usuário.
 
-| Item | História | MoSCoW | Pontos | Sprint |
-| :--- | :--- | :---: | :---: | :---: |
-| [QRO-17](#qro-17) | Receber notificações | S | 8 | 8 |
-| [QRO-18](#qro-18) | Avaliar a contraparte | S | 5 | 8 |
-| [QRO-19](#qro-19) | Histórico de negociações | C | 3 | 8 |
-| | **Total do épico** | | **16** | |
+| Item | História | Pontos | Sprint |
+| :--- | :--- | :---: | :---: |
+| [QRO-17](#qro-17) | Receber notificações | 8 | 8 |
+| [QRO-18](#qro-18) | Avaliar a contraparte | 5 | 8 |
+| [QRO-19](#qro-19) | Histórico de negociações | 3 | 8 |
+| | **Total do épico** | **16** | |
 
 ---
 
@@ -15,7 +15,7 @@ Negociação entre desconhecidos, com pagamento e entrega fora da plataforma, de
 
 > **Como** usuário, **eu quero** ser avisado dos eventos das minhas negociações, **para que** eu responda rápido sem precisar abrir a plataforma o tempo todo.
 
-**História:** [Receber notificações](../historias-de-usuario/receber-notificacoes.md) · **Prioridade:** Média · **Pontos:** 8 · **Sprint:** 8 · **Depende de:** `QRO-04`, `QRO-06`
+**História:** [Receber notificações](../historias-de-usuario/receber-notificacoes.md) · **Pontos:** 8 · **Sprint:** 8 · **Depende de:** `QRO-04`, `QRO-06`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -41,7 +41,7 @@ Negociação entre desconhecidos, com pagamento e entrega fora da plataforma, de
 
 > **Como** comprador ou vendedor, **eu quero** avaliar a outra parte depois da negociação concluída, **para que** a plataforma tenha reputação confiável e os próximos negócios sejam mais seguros.
 
-**História:** [Avaliar a contraparte](../historias-de-usuario/avaliar-contraparte.md) · **Prioridade:** Média · **Pontos:** 5 · **Sprint:** 8 · **Depende de:** `QRO-16`
+**História:** [Avaliar a contraparte](../historias-de-usuario/avaliar-contraparte.md) · **Pontos:** 5 · **Sprint:** 8 · **Depende de:** `QRO-16`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -66,7 +66,7 @@ Negociação entre desconhecidos, com pagamento e entrega fora da plataforma, de
 
 > **Como** usuário, **eu quero** consultar as negociações que já tive na plataforma, **para que** eu acompanhe o que comprei, o que vendi e com quem negociei.
 
-**História:** [Histórico de negociações](../historias-de-usuario/historico-de-negociacoes.md) · **Prioridade:** Baixa · **Pontos:** 3 · **Sprint:** 8 · **Depende de:** `QRO-16`
+**História:** [Histórico de negociações](../historias-de-usuario/historico-de-negociacoes.md) · **Pontos:** 3 · **Sprint:** 8 · **Depende de:** `QRO-16`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |

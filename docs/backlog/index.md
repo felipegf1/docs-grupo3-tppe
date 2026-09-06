@@ -5,7 +5,7 @@ hide:
 
 # :material-format-list-checks: Backlog do Produto
 
-Backlog do **Quero.**, derivado das [19 histórias de usuário](../historias-de-usuario/index.md). Cada história vira um item de backlog com identificador `QRO-XX`, estimativa em pontos, prioridade, dependências e a lista de tarefas técnicas necessárias para considerá-la pronta.
+Backlog do **Quero.**, derivado das [19 histórias de usuário](../historias-de-usuario/index.md). Cada história vira um item de backlog com identificador `QRO-XX`, estimativa em pontos, dependências e a lista de tarefas técnicas necessárias para considerá-la pronta.
 
 <div class="grid cards" markdown>
 
@@ -58,42 +58,33 @@ Fibonacci, em pontos de complexidade relativa — não em horas.
 | **8** | Alto, várias entidades e estados | [QRO-04 — Criar anúncio](../historias-de-usuario/criar-anuncio-procura-se.md) |
 | **13** | Muito alto, exige investigação | [QRO-09 — Recomendações](../historias-de-usuario/receber-recomendacoes.md) |
 
-### Priorização (MoSCoW)
-
-| Sigla | Significado | Critério no Quero. |
-| :--- | :--- | :--- |
-| **M** | *Must have* | Sem ele não existe o fluxo comprador → oferta → venda |
-| **S** | *Should have* | Alto valor, mas o fluxo funciona degradado sem ele |
-| **C** | *Could have* | Diferencial competitivo, entra se houver folga |
-| **W** | *Won't have (agora)* | Consciente e documentado em "Fora de Escopo" das histórias |
-
 ### Camadas das tarefas
 
 `Modelagem` · `Backend` · `Frontend` · `Infra` · `QA`
 
-## :material-view-list-outline: Backlog priorizado
+## :material-view-list-outline: Itens do backlog
 
-| ID | História | Épico | Ator | MoSCoW | Pontos | Sprint | Release |
-| :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| [QRO-01](conta-e-acesso.md#qro-01) | Cadastrar-se na plataforma | Conta e acesso | Visitante | M | 5 | 1 | R1 |
-| [QRO-02](conta-e-acesso.md#qro-02) | Autenticar-se na plataforma | Conta e acesso | Usuário | M | 5 | 1 | R1 |
-| [QRO-03](conta-e-acesso.md#qro-03) | Gerenciar perfil e localização | Conta e acesso | Usuário | S | 3 | 2 | R1 |
-| [QRO-04](comprador.md#qro-04) | Criar anúncio de "procura-se" | Comprador | Comprador | M | 8 | 2 | R1 |
-| [QRO-05](comprador.md#qro-05) | Gerenciar meus anúncios | Comprador | Comprador | M | 5 | 3 | R1 |
-| [QRO-06](vendedor.md#qro-06) | Ofertar produto em anúncio | Vendedor | Vendedor | M | 8 | 3 | R1 |
-| [QRO-07](vendedor.md#qro-07) | Buscar e filtrar anúncios | Vendedor | Vendedor | M | 5 | 4 | R2 |
-| [QRO-08](vendedor.md#qro-08) | Cadastrar produtos na minha loja | Vendedor | Vendedor | S | 5 | 4 | R2 |
-| [QRO-10](negociacao.md#qro-10) | Palpitar preço no anúncio | Negociação | Vendedor | C | 5 | 4 | R2 |
-| [QRO-11](negociacao.md#qro-11) | Comparar ofertas recebidas | Negociação | Comprador | M | 5 | 5 | R2 |
-| [QRO-12](negociacao.md#qro-12) | Ofertar um novo valor | Negociação | Comprador | M | 5 | 5 | R2 |
-| [QRO-13](negociacao.md#qro-13) | Responder a uma contraproposta | Negociação | Vendedor | M | 5 | 5 | R2 |
-| [QRO-14](negociacao.md#qro-14) | Negociar por chat | Negociação | Ambos | M | 8 | 6 | R2 |
-| [QRO-15](negociacao.md#qro-15) | Aceitar ou recusar uma oferta | Negociação | Comprador | M | 5 | 6 | R2 |
-| [QRO-16](negociacao.md#qro-16) | Concluir a venda | Negociação | Vendedor | M | 5 | 7 | R3 |
-| [QRO-17](confianca-e-historico.md#qro-17) | Receber notificações | Confiança | Usuário | S | 8 | 8 | R3 |
-| [QRO-18](confianca-e-historico.md#qro-18) | Avaliar a contraparte | Confiança | Ambos | S | 5 | 8 | R3 |
-| [QRO-19](confianca-e-historico.md#qro-19) | Histórico de negociações | Confiança | Usuário | C | 3 | 8 | R3 |
-| [QRO-09](descoberta.md#qro-09) | Receber recomendações | Descoberta | Comprador | C | 13 | 9 | R3 |
+| ID | História | Épico | Ator | Pontos | Sprint | Release |
+| :--- | :--- | :--- | :--- | :---: | :---: | :---: |
+| [QRO-01](conta-e-acesso.md#qro-01) | Cadastrar-se na plataforma | Conta e acesso | Visitante | 5 | 1 | R1 |
+| [QRO-02](conta-e-acesso.md#qro-02) | Autenticar-se na plataforma | Conta e acesso | Usuário | 5 | 1 | R1 |
+| [QRO-03](conta-e-acesso.md#qro-03) | Gerenciar perfil e localização | Conta e acesso | Usuário | 3 | 2 | R1 |
+| [QRO-04](comprador.md#qro-04) | Criar anúncio de "procura-se" | Comprador | Comprador | 8 | 2 | R1 |
+| [QRO-05](comprador.md#qro-05) | Gerenciar meus anúncios | Comprador | Comprador | 5 | 3 | R1 |
+| [QRO-06](vendedor.md#qro-06) | Ofertar produto em anúncio | Vendedor | Vendedor | 8 | 3 | R1 |
+| [QRO-07](vendedor.md#qro-07) | Buscar e filtrar anúncios | Vendedor | Vendedor | 5 | 4 | R2 |
+| [QRO-08](vendedor.md#qro-08) | Cadastrar produtos na minha loja | Vendedor | Vendedor | 5 | 4 | R2 |
+| [QRO-10](negociacao.md#qro-10) | Palpitar preço no anúncio | Negociação | Vendedor | 5 | 4 | R2 |
+| [QRO-11](negociacao.md#qro-11) | Comparar ofertas recebidas | Negociação | Comprador | 5 | 5 | R2 |
+| [QRO-12](negociacao.md#qro-12) | Ofertar um novo valor | Negociação | Comprador | 5 | 5 | R2 |
+| [QRO-13](negociacao.md#qro-13) | Responder a uma contraproposta | Negociação | Vendedor | 5 | 5 | R2 |
+| [QRO-14](negociacao.md#qro-14) | Negociar por chat | Negociação | Ambos | 8 | 6 | R2 |
+| [QRO-15](negociacao.md#qro-15) | Aceitar ou recusar uma oferta | Negociação | Comprador | 5 | 6 | R2 |
+| [QRO-16](negociacao.md#qro-16) | Concluir a venda | Negociação | Vendedor | 5 | 7 | R3 |
+| [QRO-17](confianca-e-historico.md#qro-17) | Receber notificações | Confiança | Usuário | 8 | 8 | R3 |
+| [QRO-18](confianca-e-historico.md#qro-18) | Avaliar a contraparte | Confiança | Ambos | 5 | 8 | R3 |
+| [QRO-19](confianca-e-historico.md#qro-19) | Histórico de negociações | Confiança | Usuário | 3 | 8 | R3 |
+| [QRO-09](descoberta.md#qro-09) | Receber recomendações | Descoberta | Comprador | 13 | 9 | R3 |
 
 ## :material-rocket-launch-outline: Plano de releases
 

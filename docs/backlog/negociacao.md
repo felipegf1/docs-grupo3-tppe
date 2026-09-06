@@ -2,16 +2,16 @@
 
 O maior épico do **Quero.**: sete itens que levam a demanda publicada até um acordo fechado com um único vendedor. É aqui que mora a barganha prevista no MVP.
 
-| Item | História | MoSCoW | Pontos | Sprint |
-| :--- | :--- | :---: | :---: | :---: |
-| [QRO-10](#qro-10) | Palpitar preço no anúncio | C | 5 | 4 |
-| [QRO-11](#qro-11) | Comparar ofertas recebidas | M | 5 | 5 |
-| [QRO-12](#qro-12) | Ofertar um novo valor | M | 5 | 5 |
-| [QRO-13](#qro-13) | Responder a uma contraproposta | M | 5 | 5 |
-| [QRO-14](#qro-14) | Negociar por chat | M | 8 | 6 |
-| [QRO-15](#qro-15) | Aceitar ou recusar uma oferta | M | 5 | 6 |
-| [QRO-16](#qro-16) | Concluir a venda | M | 5 | 7 |
-| | **Total do épico** | | **38** | |
+| Item | História | Pontos | Sprint |
+| :--- | :--- | :---: | :---: |
+| [QRO-10](#qro-10) | Palpitar preço no anúncio | 5 | 4 |
+| [QRO-11](#qro-11) | Comparar ofertas recebidas | 5 | 5 |
+| [QRO-12](#qro-12) | Ofertar um novo valor | 5 | 5 |
+| [QRO-13](#qro-13) | Responder a uma contraproposta | 5 | 5 |
+| [QRO-14](#qro-14) | Negociar por chat | 8 | 6 |
+| [QRO-15](#qro-15) | Aceitar ou recusar uma oferta | 5 | 6 |
+| [QRO-16](#qro-16) | Concluir a venda | 5 | 7 |
+| | **Total do épico** | **38** | |
 
 ---
 
@@ -19,7 +19,7 @@ O maior épico do **Quero.**: sete itens que levam a demanda publicada até um a
 
 > **Como** vendedor, **eu quero** dar um palpite de preço em um anúncio de "procura-se", **para que** o comprador saiba quanto o produto costuma valer antes de receber ofertas formais.
 
-**História:** [Palpitar preço no anúncio](../historias-de-usuario/palpitar-preco-no-anuncio.md) · **Prioridade:** Média · **Pontos:** 5 · **Sprint:** 4 · **Depende de:** `QRO-04`
+**História:** [Palpitar preço no anúncio](../historias-de-usuario/palpitar-preco-no-anuncio.md) · **Pontos:** 5 · **Sprint:** 4 · **Depende de:** `QRO-04`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -45,7 +45,7 @@ O maior épico do **Quero.**: sete itens que levam a demanda publicada até um a
 
 > **Como** comprador, **eu quero** ver e comparar todas as ofertas recebidas em um anúncio, **para que** eu escolha a proposta mais vantajosa antes de negociar.
 
-**História:** [Comparar ofertas recebidas](../historias-de-usuario/comparar-ofertas-recebidas.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 5 · **Depende de:** `QRO-06`
+**História:** [Comparar ofertas recebidas](../historias-de-usuario/comparar-ofertas-recebidas.md) · **Pontos:** 5 · **Sprint:** 5 · **Depende de:** `QRO-06`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -68,7 +68,7 @@ O maior épico do **Quero.**: sete itens que levam a demanda publicada até um a
 
 > **Como** comprador, **eu quero** propor um valor diferente do pedido pelo vendedor, **para que** eu barganhe até um preço que atenda aos dois lados.
 
-**História:** [Ofertar um novo valor](../historias-de-usuario/ofertar-novo-valor.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 5 · **Depende de:** `QRO-11`
+**História:** [Ofertar um novo valor](../historias-de-usuario/ofertar-novo-valor.md) · **Pontos:** 5 · **Sprint:** 5 · **Depende de:** `QRO-11`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -93,7 +93,7 @@ O maior épico do **Quero.**: sete itens que levam a demanda publicada até um a
 
 > **Como** vendedor, **eu quero** aceitar, recusar ou responder com um novo valor à contraproposta do comprador, **para que** a negociação chegue a um preço acordado ou seja encerrada com clareza.
 
-**História:** [Responder a uma contraproposta](../historias-de-usuario/responder-contraproposta.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 5 · **Depende de:** `QRO-12`
+**História:** [Responder a uma contraproposta](../historias-de-usuario/responder-contraproposta.md) · **Pontos:** 5 · **Sprint:** 5 · **Depende de:** `QRO-12`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -117,7 +117,7 @@ O maior épico do **Quero.**: sete itens que levam a demanda publicada até um a
 
 > **Como** comprador ou vendedor, **eu quero** conversar com a outra parte dentro da plataforma, **para que** eu esclareça dúvidas e combine detalhes sem sair para outro canal.
 
-**História:** [Negociar por chat](../historias-de-usuario/negociar-por-chat.md) · **Prioridade:** Alta · **Pontos:** 8 · **Sprint:** 6 · **Depende de:** `QRO-06`
+**História:** [Negociar por chat](../historias-de-usuario/negociar-por-chat.md) · **Pontos:** 8 · **Sprint:** 6 · **Depende de:** `QRO-06`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -143,7 +143,7 @@ O maior épico do **Quero.**: sete itens que levam a demanda publicada até um a
 
 > **Como** comprador, **eu quero** aceitar a oferta escolhida e recusar as demais, **para que** a negociação siga com um único vendedor e as outras propostas sejam liberadas.
 
-**História:** [Aceitar ou recusar uma oferta](../historias-de-usuario/aceitar-ou-recusar-oferta.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 6 · **Depende de:** `QRO-11`, `QRO-13`
+**História:** [Aceitar ou recusar uma oferta](../historias-de-usuario/aceitar-ou-recusar-oferta.md) · **Pontos:** 5 · **Sprint:** 6 · **Depende de:** `QRO-11`, `QRO-13`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -167,7 +167,7 @@ O maior épico do **Quero.**: sete itens que levam a demanda publicada até um a
 
 > **Como** vendedor, **eu quero** registrar que a venda foi concluída, **para que** o anúncio seja encerrado, o produto saia do meu catálogo e as duas partes possam se avaliar.
 
-**História:** [Concluir a venda](../historias-de-usuario/concluir-venda.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 7 · **Depende de:** `QRO-15`
+**História:** [Concluir a venda](../historias-de-usuario/concluir-venda.md) · **Pontos:** 5 · **Sprint:** 7 · **Depende de:** `QRO-15`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |

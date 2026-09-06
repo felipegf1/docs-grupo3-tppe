@@ -19,7 +19,7 @@ Em vez de o vendedor anunciar o que tem à venda, é o **comprador** quem public
 
     ---
 
-    Requisitos, protótipo e arquitetura definidos. Backlog priorizado em 19 itens e 9 sprints; implementação a iniciar.
+    Requisitos, protótipo e arquitetura definidos. Backlog com 19 itens e 9 sprints; implementação a iniciar.
 
 -   :material-puzzle-outline:{ .lg .middle } **Maior dificuldade**
 

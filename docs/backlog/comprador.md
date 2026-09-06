@@ -2,11 +2,11 @@
 
 O lado que inverte o marketplace. Aqui o comprador publica o que procura e passa a ser encontrado, em vez de procurar.
 
-| Item | História | MoSCoW | Pontos | Sprint |
-| :--- | :--- | :---: | :---: | :---: |
-| [QRO-04](#qro-04) | Criar anúncio de "procura-se" | M | 8 | 2 |
-| [QRO-05](#qro-05) | Gerenciar meus anúncios | M | 5 | 3 |
-| | **Total do épico** | | **13** | |
+| Item | História | Pontos | Sprint |
+| :--- | :--- | :---: | :---: |
+| [QRO-04](#qro-04) | Criar anúncio de "procura-se" | 8 | 2 |
+| [QRO-05](#qro-05) | Gerenciar meus anúncios | 5 | 3 |
+| | **Total do épico** | **13** | |
 
 ---
 
@@ -14,7 +14,7 @@ O lado que inverte o marketplace. Aqui o comprador publica o que procura e passa
 
 > **Como** comprador, **eu quero** criar um anúncio de "procura-se" descrevendo o produto que estou buscando, **para que** vendedores da minha região sejam notificados e possam me ofertar o produto.
 
-**História:** [Criar anúncio de "procura-se"](../historias-de-usuario/criar-anuncio-procura-se.md) · **Prioridade:** Alta · **Pontos:** 8 · **Sprint:** 2 · **Depende de:** `QRO-02`, `QRO-03`
+**História:** [Criar anúncio de "procura-se"](../historias-de-usuario/criar-anuncio-procura-se.md) · **Pontos:** 8 · **Sprint:** 2 · **Depende de:** `QRO-02`, `QRO-03`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -41,7 +41,7 @@ O lado que inverte o marketplace. Aqui o comprador publica o que procura e passa
 
 > **Como** comprador, **eu quero** ver, editar, pausar, reativar e encerrar os anúncios que publiquei, **para que** fiquem visíveis apenas as demandas que ainda tenho.
 
-**História:** [Gerenciar meus anúncios](../historias-de-usuario/gerenciar-meus-anuncios.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 3 · **Depende de:** `QRO-04`
+**História:** [Gerenciar meus anúncios](../historias-de-usuario/gerenciar-meus-anuncios.md) · **Pontos:** 5 · **Sprint:** 3 · **Depende de:** `QRO-04`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |

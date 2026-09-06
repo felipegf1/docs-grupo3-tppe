@@ -2,10 +2,10 @@
 
 O match, apontado no projeto como a maior dificuldade técnica, aplicado no sentido comprador: enquanto o anúncio espera ofertas, o **Quero.** sugere ativamente quem pode atendê-lo.
 
-| Item | História | MoSCoW | Pontos | Sprint |
-| :--- | :--- | :---: | :---: | :---: |
-| [QRO-09](#qro-09) | Receber recomendações | C | 13 | 9 |
-| | **Total do épico** | | **13** | |
+| Item | História | Pontos | Sprint |
+| :--- | :--- | :---: | :---: |
+| [QRO-09](#qro-09) | Receber recomendações | 13 | 9 |
+| | **Total do épico** | **13** | |
 
 ---
 
@@ -13,7 +13,7 @@ O match, apontado no projeto como a maior dificuldade técnica, aplicado no sent
 
 > **Como** comprador, **eu quero** receber recomendações de vendedores e produtos compatíveis com o que procuro, **para que** eu encontre boas opções sem depender só das ofertas que chegam ao meu anúncio.
 
-**História:** [Receber recomendações](../historias-de-usuario/receber-recomendacoes.md) · **Prioridade:** Média · **Pontos:** 13 · **Sprint:** 9 · **Depende de:** `QRO-04`, `QRO-08`
+**História:** [Receber recomendações](../historias-de-usuario/receber-recomendacoes.md) · **Pontos:** 13 · **Sprint:** 9 · **Depende de:** `QRO-04`, `QRO-08`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |

@@ -2,12 +2,12 @@
 
 O outro lado do modelo reverso: o vendedor localiza demandas compatíveis com o que tem e responde com uma oferta.
 
-| Item | História | MoSCoW | Pontos | Sprint |
-| :--- | :--- | :---: | :---: | :---: |
-| [QRO-06](#qro-06) | Ofertar produto em anúncio | M | 8 | 3 |
-| [QRO-07](#qro-07) | Buscar e filtrar anúncios | M | 5 | 4 |
-| [QRO-08](#qro-08) | Cadastrar produtos na minha loja | S | 5 | 4 |
-| | **Total do épico** | | **18** | |
+| Item | História | Pontos | Sprint |
+| :--- | :--- | :---: | :---: |
+| [QRO-06](#qro-06) | Ofertar produto em anúncio | 8 | 3 |
+| [QRO-07](#qro-07) | Buscar e filtrar anúncios | 5 | 4 |
+| [QRO-08](#qro-08) | Cadastrar produtos na minha loja | 5 | 4 |
+| | **Total do épico** | **18** | |
 
 ---
 
@@ -15,7 +15,7 @@ O outro lado do modelo reverso: o vendedor localiza demandas compatíveis com o 
 
 > **Como** vendedor, **eu quero** encontrar anúncios de "procura-se" compatíveis com o que tenho disponível e responder com uma oferta, **para que** eu venda meu produto usado ou seminovo direto para quem já está procurando por ele.
 
-**História:** [Ofertar produto em anúncio](../historias-de-usuario/ofertar-produto-em-anuncio.md) · **Prioridade:** Alta · **Pontos:** 8 · **Sprint:** 3 · **Depende de:** `QRO-04`
+**História:** [Ofertar produto em anúncio](../historias-de-usuario/ofertar-produto-em-anuncio.md) · **Pontos:** 8 · **Sprint:** 3 · **Depende de:** `QRO-04`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -41,7 +41,7 @@ O outro lado do modelo reverso: o vendedor localiza demandas compatíveis com o 
 
 > **Como** vendedor, **eu quero** buscar e filtrar os anúncios de "procura-se" da minha região, **para que** eu encontre rápido as demandas que consigo atender.
 
-**História:** [Buscar e filtrar anúncios](../historias-de-usuario/buscar-e-filtrar-anuncios.md) · **Prioridade:** Alta · **Pontos:** 5 · **Sprint:** 4 · **Depende de:** `QRO-04`, `QRO-06`
+**História:** [Buscar e filtrar anúncios](../historias-de-usuario/buscar-e-filtrar-anuncios.md) · **Pontos:** 5 · **Sprint:** 4 · **Depende de:** `QRO-04`, `QRO-06`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
@@ -67,7 +67,7 @@ O outro lado do modelo reverso: o vendedor localiza demandas compatíveis com o 
 
 > **Como** vendedor, **eu quero** cadastrar os produtos que tenho disponíveis, **para que** eu oferte com poucos cliques e apareça nas sugestões de match.
 
-**História:** [Cadastrar produtos na minha loja](../historias-de-usuario/cadastrar-produtos-na-loja.md) · **Prioridade:** Média · **Pontos:** 5 · **Sprint:** 4 · **Depende de:** `QRO-02`
+**História:** [Cadastrar produtos na minha loja](../historias-de-usuario/cadastrar-produtos-na-loja.md) · **Pontos:** 5 · **Sprint:** 4 · **Depende de:** `QRO-02`
 
 | # | Tarefa | Camada | Est. |
 | :--- | :--- | :--- | :---: |
