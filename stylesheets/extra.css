@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Identidade Visual: Laranja Abóbora (#D97338)
+   Tipografia: Space Grotesk (Títulos) + Inter (Corpo)
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap");
+
+:root {
+  /* Cores Principais */
+  --primary-orange: #D97338;
+  --primary-orange-hover: #C25F27;
+  --primary-orange-light: #FBF1EA;
+
+  /* Funcionais */
+  --color-success: #34C759;
+  --color-error:   #FF3B30;
+  --color-info:    #007AFF;
+
+  /* Fontes */
+  --heading-font: "Space Grotesk", sans-serif;
+  --body-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --code-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --md-text-font: var(--body-font);
+  --md-code-font: var(--code-font);
+
+  /* Variáveis globais do Material */
+  --md-primary-fg-color:        #D97338;
+  --md-primary-fg-color--light: #E48B57;
+  --md-primary-fg-color--dark:  #D97338;
+  --md-accent-fg-color:         #D97338;
+}
+
+/* -------------------------------------------------------------------------
+   CABEÇALHO E ABAS (HEADER & NAVIGATION TABS)
+   ------------------------------------------------------------------------- */
+.md-header,
+.md-header[data-md-state="shadow"],
+.md-tabs,
+.md-tabs[data-md-state="shadow"],
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs,
+html [data-md-color-primary="custom"] .md-header,
+html [data-md-color-primary="custom"] .md-tabs {
+  background-color: #D97338 !important;
+}
+
+/* Títulos, Ícones e Links do Cabeçalho e Abas */
+.md-header__title,
+.md-header__topic,
+.md-header__button,
+.md-tabs__link {
+  color: #FFFFFF !important;
+}
+
+.md-tabs__link {
+  opacity: 0.85;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1 !important;
+}
+
+/* Menu Gaveta Mobile */
+.md-nav--primary .md-nav__title[for="__drawer"] {
+  background-color: #D97338 !important;
+  color: #FFFFFF !important;
+}
+
+/* -------------------------------------------------------------------------
+   Modo Claro (Light Mode)
+   ------------------------------------------------------------------------- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #D97338;
+  --md-primary-fg-color--light: #E48B57;
+  --md-primary-fg-color--dark:  #D97338;
+  --md-primary-bg-color:        #FFFFFF;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-accent-fg-color:             #D97338;
+  --md-accent-fg-color--transparent: rgba(217, 115, 56, 0.12);
+  --md-accent-bg-color:             #FFFFFF;
+
+  --md-default-bg-color:       #FFFFFF;
+  --md-default-bg-color--light:#F8F8F8;
+
+  --md-default-fg-color:           #1A1A1A;
+  --md-default-fg-color--light:    #666666;
+  --md-default-fg-color--lighter:  #999999;
+  --md-typeset-color:              #1A1A1A;
+  --md-typeset-a-color:            #D97338;
+
+  --md-code-bg-color: #F8F8F8;
+  --md-code-fg-color: #1A1A1A;
+
+  --card-bg:     #F8F8F8;
+  --border-color:#E8E8E8;
+
+  --md-footer-bg-color:      #1A1A1A;
+  --md-footer-bg-color--dark:#0F0F0F;
+}
+
+/* -------------------------------------------------------------------------
+   Modo Escuro (Dark Mode)
+   ------------------------------------------------------------------------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #D97338;
+  --md-primary-fg-color--light: #E48B57;
+  --md-primary-fg-color--dark:  #D97338;
+  --md-primary-bg-color:        #FFFFFF;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-accent-fg-color:             #D97338;
+  --md-accent-fg-color--transparent: rgba(217, 115, 56, 0.16);
+  --md-accent-bg-color:             #0F0F0F;
+
+  --md-default-bg-color:       #0F0F0F;
+  --md-default-bg-color--light:#1A1A1A;
+
+  --md-default-fg-color:           #EDEDED;
+  --md-default-fg-color--light:    #A0A0A0;
+  --md-default-fg-color--lighter:  #707070;
+  --md-typeset-color:              #EDEDED;
+  --md-typeset-a-color:            #E48B57;
+
+  --md-code-bg-color: #1A1A1A;
+  --md-code-fg-color: #E48B57;
+
+  --card-bg:     #1A1A1A;
+  --border-color:#2A2A2A;
+
+  --md-footer-bg-color:      #080808;
+  --md-footer-bg-color--dark:#000000;
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs,
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__title[for="__drawer"] {
+  background-color: #141414 !important;
+  border-bottom: 1px solid #2A2A2A !important;
+}
+
+/* -------------------------------------------------------------------------
+   Tipografia e Legibilidade
+   ------------------------------------------------------------------------- */
+.md-typeset {
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-header__title,
+.md-nav__title,
+.md-button {
+  font-family: var(--heading-font);
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--md-typeset-color);
+}
+
+.md-typeset h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-top: 1.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--md-typeset-color);
+}
+
+.md-typeset h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.4em;
+}
+
+/* -------------------------------------------------------------------------
+   Componentes, Cards e Tabelas
+   ------------------------------------------------------------------------- */
+
+/* Cartões */
+.md-typeset .grid.cards > ul > li {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  transition: border-color 150ms, box-shadow 150ms, transform 150ms;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: #D97338;
+  box-shadow: 0 4px 12px rgba(217, 115, 56, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Tabelas */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--border-color);
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #D97338;
+  color: #FFFFFF;
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Checkboxes */
+.md-typeset .task-list-control .task-list-indicator::before {
+  background-color: #D97338;
+}
+
+/* Amostras da página de Identidade Visual */
+.paleta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.2rem 0;
+}
+
+.paleta .amostra {
+  border-radius: 0.5rem;
+  padding: 0.85rem 0.75rem;
+  font-size: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.paleta .amostra strong {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+/* Avatares da página de Equipe */
+.md-typeset .grid.cards img.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 999px;
+  border: 2px solid var(--primary-orange);
+  display: block;
+  margin: 0 auto 0.6rem;
+}
+
+/* Blocos de citação usados como assinatura da marca */
+.md-typeset .admonition.quote > .admonition-title {
+  display: none;
+}
