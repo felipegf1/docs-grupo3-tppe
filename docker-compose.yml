@@ -2,7 +2,7 @@ name: tppe-grupo3
 
 services:
   db:
-    image: postgres:16-alpine
+    image: postgis/postgis:16-3.4
     container_name: tppe-db
     restart: unless-stopped
     environment:
@@ -13,6 +13,9 @@ services:
       - "${DB_PORT:-5432}:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
+      # Schema e massa de exemplo. Rodam em ordem alfabetica e APENAS quando o
+      # volume db-data ainda nao existe.
+      - ./db/init:/docker-entrypoint-initdb.d:ro,z
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-tppe} -d ${POSTGRES_DB:-tppe}"]
       interval: 10s
@@ -74,6 +77,38 @@ services:
     networks:
       - tppe
 
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: tppe-pgadmin
+    restart: unless-stopped
+    # A imagem roda como uid 5050; em Podman rootless isso impede a escrita no
+    # volume nomeado. Rodar como root evita o problema sem perder a persistencia.
+    user: root
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@quero.test}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+      # Sem isto o pgAdmin recusa o login: ".test" e um TLD reservado (RFC 6761)
+      # e a validacao de e-mail o rejeita como nao entregavel.
+      PGADMIN_CONFIG_ALLOW_SPECIAL_EMAIL_DOMAINS: "['test', 'local']"
+      # Senha do BANCO (nao a do login do pgAdmin). Sem ela o pgAdmin abre um
+      # dialogo pedindo a senha a cada conexao. Um passfile nao serve aqui: o
+      # processo roda como uid 5050 e nao le um arquivo montado do host, que
+      # aparece como root:root — e o libpq exige modo 0600 no passfile.
+      PGPASSWORD: ${POSTGRES_PASSWORD:-tppe}
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      # Deixa a conexao com o banco ja cadastrada na arvore lateral.
+      - ./db/pgadmin/servers.json:/pgadmin4/servers.json:ro,z
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - tppe
+
   docs:
     image: squidfunk/mkdocs-material:9
     container_name: tppe-docs
@@ -86,6 +121,7 @@ services:
 
 volumes:
   db-data:
+  pgadmin-data:
 
 networks:
   tppe:

@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Quero. - desenvolvimento",
+      "Group": "TPPE Grupo 3",
+      "Host": "db",
+      "Port": 5432,
+      "MaintenanceDB": "tppe",
+      "Username": "tppe",
+      "SSLMode": "prefer",
+      "Comment": "Banco PostGIS local do compose. A senha vem de PGPASSWORD no servico pgadmin."
+    }
+  }
+}

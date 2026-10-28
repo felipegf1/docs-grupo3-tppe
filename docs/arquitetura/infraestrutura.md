@@ -6,27 +6,45 @@ Ambientes, orquestração e o esboço do que ainda será construído no **Quero.
 
 | Serviço | Imagem / base | Porta | Situação |
 | :--- | :--- | :--- | :--- |
-| `db` | `postgis/postgis:16-3.4` | 5432 | **A ajustar** — hoje é `postgres:16-alpine`, sem PostGIS |
+| `db` | `postgis/postgis:16-3.4` | 5432 | Pronto — com schema e massa de exemplo em `db/init/` |
 | `backend` | `python:3.12-slim` + GEOS/GDAL/PROJ | 8000 | **A criar** — o diretório `backend/` não existe |
 | `frontend` | `node:20-alpine` + Vite | 3000 | **A criar** — o diretório `frontend/` não existe |
 | `worker` | mesma imagem do backend | — | **A criar** — a partir da Release 3 |
 | `redis` | `redis:7-alpine` | 6379 | **A criar** — a partir da Release 3 |
 | `adminer` | `adminer:latest` | 8080 | Pronto |
+| `pgadmin` | `dpage/pgadmin4:latest` | 5050 | Pronto — conexão pré-cadastrada por `db/pgadmin/servers.json` |
 | `docs` | `squidfunk/mkdocs-material:9` | 8001 | Pronto e em uso |
 
-!!! danger "O compose atual não suporta o raio de busca"
-    A imagem `postgres:16-alpine` declarada hoje **não contém a extensão PostGIS**. Enquanto ela não for trocada, `CREATE EXTENSION postgis` falha e nenhuma consulta por raio funciona. Essa é a primeira mudança de infraestrutura a ser feita.
+!!! success "A troca por PostGIS já foi feita"
+    O `docker-compose.yml` usa `postgis/postgis:16-3.4`. A extensão é criada por `db/init/00_extensoes.sql`, junto de `citext`, `pg_trgm` e `unaccent`.
 
-## :material-file-document-edit-outline: Mudanças necessárias no `docker-compose.yml`
+## :material-database-outline: O schema em `db/init/`
 
-```diff
-   db:
--    image: postgres:16-alpine
-+    image: postgis/postgis:16-3.4
-     container_name: tppe-db
-```
+Os arquivos são executados em ordem alfabética pelo *entrypoint* do Postgres, **apenas na primeira criação do volume** `db-data`. A numeração espelha os apps do [backend](backend.md#apps-por-epico):
 
-E os serviços a acrescentar quando a Release 3 começar:
+| Arquivo | Conteúdo |
+| :--- | :--- |
+| `00_extensoes.sql` | PostGIS, citext, pg_trgm, unaccent |
+| `05_tipos.sql` | ENUMs dos estados do [glossário](../produto/glossario.md#estados), domínios `dinheiro`, `nota`, `sigla_uf` |
+| `06_auditoria.sql` | `transicao_estado` e o gatilho genérico de auditoria ([RNF-13](../produto/requisitos.md#integridade-e-rastreabilidade)) |
+| `10_contas.sql` | `usuario`, `localizacao`, `token_redefinicao_senha` |
+| `15_taxonomia.sql` | `categoria`, já populada com as 8 do glossário |
+| `20_anuncios.sql` | `anuncio`, `alcance` materializado, índices GiST e máquina de estados |
+| `30_catalogo.sql` | `produto`, `produto_foto` |
+| `40_ofertas.sql` | `oferta` com dados congelados ([RNF-15](../produto/requisitos.md#integridade-e-rastreabilidade)), `busca_salva` |
+| `50_negociacao.sql` | `palpite`, `negociacao`, `contraproposta`, `conversa`, `mensagem`, `denuncia`, `bloqueio` |
+| `60_descoberta.sql` | `recomendacao` |
+| `70_notificacoes.sql` | `notificacao`, `preferencia_notificacao` |
+| `80_reputacao.sql` | `avaliacao`, publicação simultânea e reputação agregada |
+| `99_seed.sql` | Massa de exemplo em São Paulo, Campinas, Rio, BH e Curitiba |
+
+!!! warning "Este schema precede as migrações do Django"
+    Ele existe para validar o modelo e permitir explorar as consultas espaciais antes de o `backend/` existir. Quando o projeto Django entrar, **uma das duas fontes tem de ceder**: ou o schema vira `models.py` (o caminho curto é `manage.py inspectdb`) e `db/init/` passa a servir só de referência, ou as migrações assumem e o diretório é esvaziado. Rodar `migrate` sobre este banco sem decidir isso resulta em tabelas duplicadas.
+
+!!! note "Regras que moram no banco"
+    As transições de estado e as invariantes mais caras estão em *triggers*, não só na aplicação: anúncio encerrado não reabre, negociação concluída não reabre ([RNF-14](../produto/requisitos.md#integridade-e-rastreabilidade)), mensagem e avaliação são imutáveis ([RNF-12](../produto/requisitos.md#integridade-e-rastreabilidade)), um vendedor tem uma oferta ativa por anúncio e o `alcance` é recalculado no próprio banco — o risco de "recálculo esquecido em uma edição" desta página deixa de depender de alguém lembrar.
+
+## :material-file-document-edit-outline: Serviços a acrescentar quando a Release 3 começar
 
 ```yaml
   redis:
@@ -49,26 +67,15 @@ E os serviços a acrescentar quando a Release 3 começar:
     networks: [tppe]
 ```
 
-Variáveis novas para o `.env.example`:
+Com elas, as duas variáveis que faltam no `.env.example`:
 
 ```bash
 # Fila e cache
 REDIS_PORT=6379
 REDIS_URL=redis://redis:6379/0
-
-# Geocodificação
-GEOCODER_URL=https://nominatim.openstreetmap.org
-GEOCODER_USER_AGENT=quero-tppe
-
-# Regras configuráveis (RNF-23)
-RAIO_PADRAO_KM=20
-RAIO_MAXIMO_KM=200
-LIMITE_RODADAS_NEGOCIACAO=5
-PRAZO_CONTRAPROPOSTA_HORAS=48
-PRAZO_CONFIRMACAO_VENDA_HORAS=72
 ```
 
-O [RNF-23](../produto/requisitos.md#operacao) exige que prazos, limite de rodadas e raio padrão sejam configuráveis sem alterar código — daí virem do ambiente.
+As demais já estão lá: geocodificação, prazos, limite de rodadas e raio padrão. O [RNF-23](../produto/requisitos.md#operacao) exige que essas regras sejam configuráveis sem alterar código — daí virem do ambiente.
 
 ## :material-server-network: Ambientes
 
@@ -97,14 +104,14 @@ Esboço em fases. As fases 1 a 3 acompanham as releases do [backlog do produto](
 
     Antes da primeira história de usuário. Nada disso está no backlog do produto porque não é funcionalidade — é o chão de fábrica.
 
-    - [ ] Trocar a imagem do banco para `postgis/postgis:16-3.4`
+    - [x] Trocar a imagem do banco para `postgis/postgis:16-3.4`
     - [ ] Criar `backend/` com projeto Django, DRF e `django.contrib.gis`
     - [ ] Escrever o `Dockerfile` do backend com GEOS, GDAL e PROJ
-    - [ ] Primeira migração com `CREATE EXTENSION postgis`
+    - [x] Criar o schema inicial em `db/init/`, com `CREATE EXTENSION postgis`
     - [ ] Criar `frontend/` com Vite, React e TypeScript
     - [ ] Escrever o `Dockerfile` do frontend
     - [ ] Extrair os tokens da identidade visual para `tokens.css`
-    - [ ] Acrescentar as variáveis novas ao `.env.example`
+    - [x] Acrescentar as variáveis novas ao `.env.example`
     - [ ] Configurar CORS entre `:3000` e `:8000`
     - [ ] Criar os workflows `ci-backend.yml` e `ci-frontend.yml`
     - [ ] Definir o serviço de geocodificação e a política de uso

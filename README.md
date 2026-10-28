@@ -106,16 +106,43 @@ docker compose up docs
 
 A documentação fica disponível em `http://localhost:8001`.
 
-> O `docker-compose.yml` também descreve os serviços planejados da aplicação (`backend`, `frontend`, `db` e `adminer`). Eles ainda não fazem parte deste repositório: enquanto o código não existir, use `docker compose up docs`, que sobe apenas a documentação. Para o ambiente completo, copie as variáveis com `cp .env.example .env` antes de subir.
->
-> **Atenção:** a imagem do banco declarada hoje é `postgres:16-alpine`, que **não** contém a extensão PostGIS exigida pelo raio de busca. A troca por `postgis/postgis:16-3.4` é o primeiro item da [Fase 0 do roadmap técnico](https://felipegf1.github.io/docs-grupo3-tppe/arquitetura/infraestrutura/#o-que-ainda-sera-realizado).
+## Rodando o banco de dados
+
+O banco é PostgreSQL com **PostGIS** e já sobe com o schema completo e uma massa de exemplo espalhada por São Paulo, Campinas, Rio, Belo Horizonte e Curitiba.
+
+```bash
+cp .env.example .env
+docker compose up -d db pgadmin
+```
+
+O pgAdmin abre em `http://localhost:5050` (login `admin@quero.test` / `admin`) com a conexão **Quero. - desenvolvimento** já cadastrada e autenticada — não pede a senha do banco. Se precisar dela em outro cliente: usuário `tppe`, senha `tppe`, base `tppe`.
+
+Para o console no terminal:
+
+```bash
+docker compose exec db psql -U tppe -d tppe
+```
+
+> **Podman em vez de Docker?** Instale o `podman-compose` (`sudo dnf install podman-compose`) e troque `docker compose` por `podman-compose` nos comandos acima.
+
+Os scripts de `db/init/` rodam **apenas quando o volume `db-data` é criado**. Para reconstruir o banco do zero depois de mexer no schema:
+
+```bash
+docker compose down -v && docker compose up -d db pgadmin
+```
+
+O modelo de dados, a lista de arquivos de `db/init/` e as regras que moram em *triggers* estão documentados em [Infraestrutura](https://felipegf1.github.io/docs-grupo3-tppe/arquitetura/infraestrutura/#o-schema-em-dbinit).
+
+> Os serviços `backend` e `frontend` do `docker-compose.yml` ainda não têm código neste repositório — por isso os comandos acima nomeiam os serviços em vez de subir tudo.
 
 | Endereço | Serviço | Situação |
 |---|---|---|
 | http://localhost:8001 | Documentação | Disponível |
+| http://localhost:5050 | pgAdmin | Disponível |
+| http://localhost:8080 | Adminer | Disponível |
+| http://localhost:5432 | PostgreSQL + PostGIS | Disponível |
 | http://localhost:3000 | Frontend | Planejado |
 | http://localhost:8000 | API | Planejado |
-| http://localhost:8080 | Adminer | Planejado |
 
 ---
 
