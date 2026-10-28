@@ -124,6 +124,7 @@ nav:
       - Geolocalização: arquitetura/geolocalizacao.md
       - Frontend: arquitetura/frontend.md
       - Infraestrutura: arquitetura/infraestrutura.md
+      - Modelo físico do banco: arquitetura/modelo-fisico.md
   - Interface:
       - Identidade visual: interface/identidade-visual.md
       - Protótipo: interface/prototipo.md
